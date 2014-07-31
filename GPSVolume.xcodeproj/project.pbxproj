@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F5ADDCF1989FE1D008421BA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F5ADDCE1989FE1D008421BA /* Cocoa.framework */; };
+		4F5ADDD91989FE1D008421BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F5ADDD71989FE1D008421BA /* InfoPlist.strings */; };
+		4F5ADDDB1989FE1D008421BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5ADDDA1989FE1D008421BA /* main.m */; };
+		4F5ADDDF1989FE1D008421BA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4F5ADDDD1989FE1D008421BA /* Credits.rtf */; };
+		4F5ADDE21989FE1D008421BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5ADDE11989FE1D008421BA /* AppDelegate.m */; };
+		4F5ADDE51989FE1D008421BA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F5ADDE31989FE1D008421BA /* MainMenu.xib */; };
+		4F5ADDE71989FE1D008421BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F5ADDE61989FE1D008421BA /* Images.xcassets */; };
+		4F5ADDEE1989FE1D008421BA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F5ADDED1989FE1D008421BA /* XCTest.framework */; };
+		4F5ADDEF1989FE1E008421BA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F5ADDCE1989FE1D008421BA /* Cocoa.framework */; };
+		4F5ADDF71989FE1E008421BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F5ADDF51989FE1E008421BA /* InfoPlist.strings */; };
+		4F5ADDF91989FE1E008421BA /* GPSVolumeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5ADDF81989FE1E008421BA /* GPSVolumeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F5ADDF01989FE1E008421BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F5ADDC31989FE1D008421BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F5ADDCA1989FE1D008421BA;
+			remoteInfo = GPSVolume;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F5ADDCB1989FE1D008421BA /* GPSVolume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSVolume.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F5ADDCE1989FE1D008421BA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4F5ADDD11989FE1D008421BA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4F5ADDD21989FE1D008421BA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4F5ADDD31989FE1D008421BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4F5ADDD61989FE1D008421BA /* GPSVolume-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPSVolume-Info.plist"; sourceTree = "<group>"; };
+		4F5ADDD81989FE1D008421BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4F5ADDDA1989FE1D008421BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4F5ADDDC1989FE1D008421BA /* GPSVolume-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPSVolume-Prefix.pch"; sourceTree = "<group>"; };
+		4F5ADDDE1989FE1D008421BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4F5ADDE01989FE1D008421BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4F5ADDE11989FE1D008421BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4F5ADDE41989FE1D008421BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4F5ADDE61989FE1D008421BA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4F5ADDEC1989FE1D008421BA /* GPSVolumeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPSVolumeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F5ADDED1989FE1D008421BA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4F5ADDF41989FE1E008421BA /* GPSVolumeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPSVolumeTests-Info.plist"; sourceTree = "<group>"; };
+		4F5ADDF61989FE1E008421BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4F5ADDF81989FE1E008421BA /* GPSVolumeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPSVolumeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F5ADDC81989FE1D008421BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F5ADDCF1989FE1D008421BA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5ADDE91989FE1D008421BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F5ADDEF1989FE1E008421BA /* Cocoa.framework in Frameworks */,
+				4F5ADDEE1989FE1D008421BA /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F5ADDC21989FE1D008421BA = {
+			isa = PBXGroup;
+			children = (
+				4F5ADDD41989FE1D008421BA /* GPSVolume */,
+				4F5ADDF21989FE1E008421BA /* GPSVolumeTests */,
+				4F5ADDCD1989FE1D008421BA /* Frameworks */,
+				4F5ADDCC1989FE1D008421BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F5ADDCC1989FE1D008421BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F5ADDCB1989FE1D008421BA /* GPSVolume.app */,
+				4F5ADDEC1989FE1D008421BA /* GPSVolumeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F5ADDCD1989FE1D008421BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F5ADDCE1989FE1D008421BA /* Cocoa.framework */,
+				4F5ADDED1989FE1D008421BA /* XCTest.framework */,
+				4F5ADDD01989FE1D008421BA /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F5ADDD01989FE1D008421BA /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F5ADDD11989FE1D008421BA /* AppKit.framework */,
+				4F5ADDD21989FE1D008421BA /* CoreData.framework */,
+				4F5ADDD31989FE1D008421BA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4F5ADDD41989FE1D008421BA /* GPSVolume */ = {
+			isa = PBXGroup;
+			children = (
+				4F5ADDE01989FE1D008421BA /* AppDelegate.h */,
+				4F5ADDE11989FE1D008421BA /* AppDelegate.m */,
+				4F5ADDE31989FE1D008421BA /* MainMenu.xib */,
+				4F5ADDE61989FE1D008421BA /* Images.xcassets */,
+				4F5ADDD51989FE1D008421BA /* Supporting Files */,
+			);
+			path = GPSVolume;
+			sourceTree = "<group>";
+		};
+		4F5ADDD51989FE1D008421BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F5ADDD61989FE1D008421BA /* GPSVolume-Info.plist */,
+				4F5ADDD71989FE1D008421BA /* InfoPlist.strings */,
+				4F5ADDDA1989FE1D008421BA /* main.m */,
+				4F5ADDDC1989FE1D008421BA /* GPSVolume-Prefix.pch */,
+				4F5ADDDD1989FE1D008421BA /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F5ADDF21989FE1E008421BA /* GPSVolumeTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F5ADDF81989FE1E008421BA /* GPSVolumeTests.m */,
+				4F5ADDF31989FE1E008421BA /* Supporting Files */,
+			);
+			path = GPSVolumeTests;
+			sourceTree = "<group>";
+		};
+		4F5ADDF31989FE1E008421BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F5ADDF41989FE1E008421BA /* GPSVolumeTests-Info.plist */,
+				4F5ADDF51989FE1E008421BA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F5ADDCA1989FE1D008421BA /* GPSVolume */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F5ADDFC1989FE1E008421BA /* Build configuration list for PBXNativeTarget "GPSVolume" */;
+			buildPhases = (
+				4F5ADDC71989FE1D008421BA /* Sources */,
+				4F5ADDC81989FE1D008421BA /* Frameworks */,
+				4F5ADDC91989FE1D008421BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPSVolume;
+			productName = GPSVolume;
+			productReference = 4F5ADDCB1989FE1D008421BA /* GPSVolume.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F5ADDEB1989FE1D008421BA /* GPSVolumeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F5ADDFF1989FE1E008421BA /* Build configuration list for PBXNativeTarget "GPSVolumeTests" */;
+			buildPhases = (
+				4F5ADDE81989FE1D008421BA /* Sources */,
+				4F5ADDE91989FE1D008421BA /* Frameworks */,
+				4F5ADDEA1989FE1D008421BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F5ADDF11989FE1E008421BA /* PBXTargetDependency */,
+			);
+			name = GPSVolumeTests;
+			productName = GPSVolumeTests;
+			productReference = 4F5ADDEC1989FE1D008421BA /* GPSVolumeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F5ADDC31989FE1D008421BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = m0a;
+				TargetAttributes = {
+					4F5ADDEB1989FE1D008421BA = {
+						TestTargetID = 4F5ADDCA1989FE1D008421BA;
+					};
+				};
+			};
+			buildConfigurationList = 4F5ADDC61989FE1D008421BA /* Build configuration list for PBXProject "GPSVolume" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F5ADDC21989FE1D008421BA;
+			productRefGroup = 4F5ADDCC1989FE1D008421BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F5ADDCA1989FE1D008421BA /* GPSVolume */,
+				4F5ADDEB1989FE1D008421BA /* GPSVolumeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F5ADDC91989FE1D008421BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F5ADDD91989FE1D008421BA /* InfoPlist.strings in Resources */,
+				4F5ADDE71989FE1D008421BA /* Images.xcassets in Resources */,
+				4F5ADDDF1989FE1D008421BA /* Credits.rtf in Resources */,
+				4F5ADDE51989FE1D008421BA /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5ADDEA1989FE1D008421BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F5ADDF71989FE1E008421BA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F5ADDC71989FE1D008421BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F5ADDE21989FE1D008421BA /* AppDelegate.m in Sources */,
+				4F5ADDDB1989FE1D008421BA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5ADDE81989FE1D008421BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F5ADDF91989FE1E008421BA /* GPSVolumeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F5ADDF11989FE1E008421BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F5ADDCA1989FE1D008421BA /* GPSVolume */;
+			targetProxy = 4F5ADDF01989FE1E008421BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4F5ADDD71989FE1D008421BA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F5ADDD81989FE1D008421BA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4F5ADDDD1989FE1D008421BA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F5ADDDE1989FE1D008421BA /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4F5ADDE31989FE1D008421BA /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F5ADDE41989FE1D008421BA /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		4F5ADDF51989FE1E008421BA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F5ADDF61989FE1E008421BA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F5ADDFA1989FE1E008421BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4F5ADDFB1989FE1E008421BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4F5ADDFD1989FE1E008421BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPSVolume/GPSVolume-Prefix.pch";
+				INFOPLIST_FILE = "GPSVolume/GPSVolume-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4F5ADDFE1989FE1E008421BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPSVolume/GPSVolume-Prefix.pch";
+				INFOPLIST_FILE = "GPSVolume/GPSVolume-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4F5ADE001989FE1E008421BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GPSVolume.app/Contents/MacOS/GPSVolume";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPSVolume/GPSVolume-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GPSVolumeTests/GPSVolumeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4F5ADE011989FE1E008421BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GPSVolume.app/Contents/MacOS/GPSVolume";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPSVolume/GPSVolume-Prefix.pch";
+				INFOPLIST_FILE = "GPSVolumeTests/GPSVolumeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F5ADDC61989FE1D008421BA /* Build configuration list for PBXProject "GPSVolume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F5ADDFA1989FE1E008421BA /* Debug */,
+				4F5ADDFB1989FE1E008421BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F5ADDFC1989FE1E008421BA /* Build configuration list for PBXNativeTarget "GPSVolume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F5ADDFD1989FE1E008421BA /* Debug */,
+				4F5ADDFE1989FE1E008421BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4F5ADDFF1989FE1E008421BA /* Build configuration list for PBXNativeTarget "GPSVolumeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F5ADE001989FE1E008421BA /* Debug */,
+				4F5ADE011989FE1E008421BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F5ADDC31989FE1D008421BA /* Project object */;
+}

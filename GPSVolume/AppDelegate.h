@@ -7,8 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate, CLLocationManagerDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 

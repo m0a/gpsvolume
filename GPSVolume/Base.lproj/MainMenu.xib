@@ -13,11 +13,14 @@
         <customObject id="-3" userLabel="Application"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
+                <outlet property="locationDetact" destination="mU4-6z-JID" id="E7q-xs-cFT"/>
+                <outlet property="manager" destination="fmQ-En-lgk" id="zyM-9E-Y2Z"/>
                 <outlet property="statusMenu" destination="9ae-Dq-Xyn" id="AFA-Mk-4vK"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="fmQ-En-lgk" customClass="Manager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
                 <menuItem title="GPSVolume" id="1Xt-HY-uBw">
@@ -667,14 +670,30 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="GPSVolume" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+        <window title="GPSVolume" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
+            <rect key="contentRect" x="335" y="390" width="172" height="40"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <rect key="frame" x="0.0" y="0.0" width="172" height="40"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S4i-Xd-WDT">
+                        <rect key="frame" x="8" y="1" width="157" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="iqV-Yt-XiE"/>
+                    </slider>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ves-QP-55Q">
+                        <rect key="frame" x="14" y="20" width="145" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="G2L-rt-fOR">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
             </view>
         </window>
         <menu id="9ae-Dq-Xyn">
@@ -685,8 +704,11 @@
                         <action selector="terminate:" target="-3" id="Euw-CB-BBg"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Location Detecting" id="mU4-6z-JID">
+                <menuItem title="Location Detecting" enabled="NO" id="mU4-6z-JID">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <binding destination="PgF-Bw-Dwq" name="title" keyPath="selection.locationString" id="1FU-zC-nMm"/>
+                    </connections>
                 </menuItem>
                 <menuItem title="SetLocation" id="uGe-RR-B1i">
                     <modifierMask key="keyEquivalentModifierMask"/>
@@ -698,7 +720,24 @@
                         </items>
                     </menu>
                 </menuItem>
+                <menuItem title="Item" id="KE4-ml-kzW">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <outlet property="view" destination="EiT-Mj-1SZ" id="DvS-oR-z6B"/>
+                    </connections>
+                </menuItem>
             </items>
         </menu>
+        <objectController id="PgF-Bw-Dwq">
+            <connections>
+                <outlet property="content" destination="fmQ-En-lgk" id="3pO-c5-DSc"/>
+            </connections>
+        </objectController>
+        <userDefaultsController representsSharedInstance="YES" id="rbL-gK-ndv"/>
+        <slider horizontalHuggingPriority="750" id="ICM-e6-URw">
+            <rect key="frame" x="0.0" y="0.0" width="21" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <sliderCell key="cell" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="T5U-IW-fjx"/>
+        </slider>
     </objects>
 </document>

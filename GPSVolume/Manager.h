@@ -13,5 +13,7 @@
 @property(retain) NSNumber* latitude;
 @property(retain) NSNumber* longitude;
 @property(readonly) NSString* locationString;
+@property(retain) NSNumber* volume;
+@property(retain) NSNumber* mute;
 
 @end

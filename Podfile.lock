@@ -1,0 +1,10 @@
+PODS:
+  - AMCoreAudio (1.4)
+
+DEPENDENCIES:
+  - AMCoreAudio
+
+SPEC CHECKSUMS:
+  AMCoreAudio: ac710b0eb51146506faf42a2196f88f1bdfca201
+
+COCOAPODS: 0.33.1

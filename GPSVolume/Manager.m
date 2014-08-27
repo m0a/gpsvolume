@@ -10,12 +10,26 @@
 
 @implementation Manager
 
+#pragma mark - property
 //TODO 基本的に設定すべきはGPS座標のみ。それをうまく変換して表示するように修正したい。
 //以下の記述は必要だろうか？　結局glueコードを書いている。
 -(NSString*) locationString
 {
     return [NSString stringWithFormat:@"%@,%@",self.longitude,self.latitude];
 }
+
+-(void) setMute:(NSNumber*) val
+{
+    NSLog(@"set mute is %@",val);
+    return;
+}
+
+-(NSNumber*) mute
+{
+    return [NSNumber numberWithBool:YES];
+}
+
+#pragma mark - KVO
 
 +(NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key
 {
